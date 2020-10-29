@@ -4,12 +4,16 @@
 .searchPageHeader {
   display: flex;
   position: sticky;
+  overflow-x: scroll;
   top: 0;
   background-color: white;
   z-index: 2;
   align-items: flex-start;
   padding: 7vh;
   border-bottom: 1px solid lightgray;
+}
+.searchPageHeader::-webkit-scrollbar {
+  display: none;
 }
 
 .searchPage_logo {
@@ -49,7 +53,7 @@
   align-items: center;
   margin-right: 2vw;
 }
-/* @media (min-width: 100px) {
+@media (max-width: 400px) {
   .searchPageHeader {
     display: block;
   }
@@ -59,7 +63,7 @@
   .searchPage_options {
     font-size: 2vw;
   }
-} */
+}
 
 .searchPage_Result {
   margin: 30px 0;
@@ -72,7 +76,7 @@
 .searchPage_Results {
   max-width: 1000px;
   margin-top: 40px;
-  margin-left: 240px;
+  margin-left: 20vw;
   margin-bottom: 100px;
 }
 
